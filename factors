@@ -19,9 +19,11 @@ def main():
 
 def print_factors(number):
     i = 2
-    while number % i:
+    while i <= number:
+        if number % i == 0:
+            print(f"{number}={number // i}*{i}")
+            break
         i += 1
-    print("{}={}*{}".format(number, number // i, i))
 
 
 if __name__ == "__main__":
