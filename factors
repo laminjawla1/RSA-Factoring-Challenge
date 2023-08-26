@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+from sys import argv
+
+
+def main():
+	if len(argv) != 2:
+		print("factors <file>")
+if __name__ == "__main__":
+	main()
