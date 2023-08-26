@@ -15,12 +15,10 @@ def main():
 
 
 def print_factors(number):
-    if number < 2:
-        return
     i = 2
-    while number % i != 0:
+    while number % i:
         i += 1
-    print(f"{number}={number // i}*{i}")
+    print("{}={}*{}".format(number, number // i, i))
 
 
 if __name__ == "__main__":
